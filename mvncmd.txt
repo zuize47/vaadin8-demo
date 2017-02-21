@@ -1,0 +1,3 @@
+Run Maven With jrebel
+
+set MAVEN_OPTS=-javaagent:C:\Users\hoang\.IntelliJIdea2016.2\config\plugins\jr-ide-idea\lib\jrebel6\jrebel.jar -Xbootclasspath/p:C:/Users/hoang/AppData/Local/Temp//rebelboot.jar
