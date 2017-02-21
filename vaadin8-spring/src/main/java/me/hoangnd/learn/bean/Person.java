@@ -1,4 +1,4 @@
-package me.hoangnd.learn;
+package me.hoangnd.learn.bean;
 
 import java.time.LocalDate;
 
@@ -67,65 +67,5 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 }
-enum Sex{
-    Male("Nam"),
-    Female("Nữ");
-    private final String name;
 
-    public boolean equalsName(String otherName) {
-        return (otherName == null) ? false : name.equals(otherName);
-    }
 
-    private Sex(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-}
-class Title{
-    String code;
-
-    String name;
-
-    public Title(String code, String name) {
-        this.code = code;
-        this.name = name;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
-enum Marital{
-    SINGLE("Độc thân"), MARRIED("Đã kết hôn"), DIVORCED("Li dị"), SEPARATE("Ly thân");
-
-    private final String name;
-
-    public boolean equalsName(String otherName) {
-        return (otherName == null) ? false : name.equals(otherName);
-    }
-
-    private Marital(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-}
